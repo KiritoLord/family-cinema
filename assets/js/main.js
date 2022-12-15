@@ -131,20 +131,20 @@
 	/*----------------------------
 	START - videos popup
 	------------------------------ */
-	// $('.popup-youtube').magnificPopup({type:'iframe'});
-	// //iframe scri
-	// $.extend(true, $.magnificPopup.defaults, {  
-	// 	iframe: {
-	// 		patterns: {
-	// 			//youtube videos
-	// 			youtube: {
-	// 				index: 'youtube.com/', 
-	// 				id: 'v=', 
-	// 				src: 'https://motchill.tv/xem-phim/biet-doi-sieu-anh-hung-4-hoi-ket-tap-full-6509_81770.html' 
-	// 			}
-	// 		}
-	// 	}
-	// });
+	$('.popup-youtube').magnificPopup({type:'iframe'});
+	//iframe scri
+	$.extend(true, $.magnificPopup.defaults, {  
+		iframe: {
+			patterns: {
+				//youtube videos
+				youtube: {
+					index: 'youtube.com/', 
+					id: 'v=', 
+					src: 'https://motchill.tv/xem-phim/biet-doi-sieu-anh-hung-4-hoi-ket-tap-full-6509_81770.html' 
+				}
+			}
+		}
+	});
 	
 	/*----------------------------
     START - Isotope
@@ -172,14 +172,19 @@
  * login
  */
    document.getElementById("btndangnhap").disabled=true;
+   document.getElementById("btndangnhap").style.backgroundColor ="black";
 
    function daoNutDN(){
     var u = document.getElementById("un").value;
     var p = document.getElementById("mk").value;
-    if (u.length>0 && p.length>0) 
+    if (u.length>5 && p.length>5){
         document.getElementById("btndangnhap").disabled=false;
-    else
+		document.getElementById("btndangnhap").style.backgroundColor ="#eb315a";
+	}
+    else{
         document.getElementById("btndangnhap").disabled=true;
+		document.getElementById("btndangnhap").style.backgroundColor ="black";
+	}
 }
 function daoTT() {
     var mk = document.getElementById("mk");
