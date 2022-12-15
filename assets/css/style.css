@@ -1346,7 +1346,7 @@ hr {
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  background-color: tomato;
+  background-color: #eb315a;
   color: white;
   display: flex;
   justify-content: center;
@@ -1485,7 +1485,7 @@ hr {
 }
 
 .page-number ul li{
-  background-color: tomato;
+  background-color: #eb315a;
   border-radius: 50%;
   margin-right: 10px;
   width: 50px;
