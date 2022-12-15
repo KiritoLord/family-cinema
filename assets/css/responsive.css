@@ -286,9 +286,6 @@
 }
 
 
-
-
-
 }
 @media only screen and (max-width: 576px){
 	header.header {
@@ -422,7 +419,12 @@ input[type="password"]{
   .login-box input[type="text"]{
     width: 90%;
   }
-
+.page-number{
+  width: 80%;
+}
+.page-number ul li{
+  line-height: 30px;
+}
 }
 @media only screen and (max-width: 420px){
 .news-bg-1,.news-bg-2,.news-bg-3 {

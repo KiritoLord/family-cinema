@@ -1416,6 +1416,9 @@ hr {
     .site-footer{
         font-size: 5px;
     }
+    .page-number{
+      width: 60%!important;
+    }
     }
 .header{
         background-color: #1113;
@@ -1470,6 +1473,9 @@ hr {
 ---------------------------------------*/
 .page-number{
   text-align: center;
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .number{
