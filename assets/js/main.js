@@ -190,3 +190,36 @@ function daoTT() {
     var mk = document.getElementById("mk");
     mk.type = (mk.type === "password")? "text":"password";
 }  
+/**
+ * video 
+ */
+
+function toggle() {
+	var film = document.querySelector(".film")
+	var video = document.querySelector("video")
+	film.classList.toggle("active")
+	video.pause();
+	video.curentTime = 0;
+  }
+/**
+ * to top
+ */
+
+  var goTop = 150;
+      
+      var goBottom = window.outerHeight;
+  
+      $(document).ready(function(){
+        $(window).scroll(function(){
+          if($(this).scrollTop() >= goTop){
+            $('#backtop').fadeIn();
+          }else{
+            $('#backtop').fadeOut();
+          }
+        });
+        $("#backtop").click(function(){
+          $('html, body').animate({
+            scrollTop: 0
+          }, 500);
+        });
+      });
