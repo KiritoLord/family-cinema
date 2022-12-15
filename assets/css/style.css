@@ -551,6 +551,11 @@ hr {
   margin: 0;
   border-top: 1px solid #ddd;
 }
+
+.flexbox-center{
+  margin-top: 150px;
+}
+
 .portfolio-menu {
   padding-top: 30px;
 }
@@ -1156,7 +1161,7 @@ hr {
   display: none;
   height: 100%;
   background: rgba(0, 0, 0, 0.4);
-  z-index: 99;
+  z-index: 999;
   padding: 0 15px;
 }
 
@@ -1330,6 +1335,11 @@ hr {
   margin-left: 20px;
 }
 
+.row-container {
+  margin-bottom: 10px;
+  display: flex;
+}
+
 /* ---------------------------BACK TOP------------------------- */
 
 #backtop{
@@ -1458,3 +1468,31 @@ hr {
 /*--------------------------------------
 --------- Pre Loader Style END ---------
 ---------------------------------------*/
+.page-number{
+  text-align: center;
+}
+
+.number{
+  text-align: center;
+  align-items: center;
+}
+
+.page-number ul{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.page-number ul li{
+  background-color: tomato;
+  border-radius: 50%;
+  margin-right: 10px;
+  width: 50px;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+.page-number .number ul .dots{
+  background-color: transparent;
+}
