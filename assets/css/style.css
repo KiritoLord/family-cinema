@@ -1499,6 +1499,10 @@ hr {
   cursor: pointer;
 }
 
+.page-number ul li:hover{
+  background-color: #eb3159d6;
+}
+
 .page-number .number ul .dots{
   background-color: transparent;
 }
