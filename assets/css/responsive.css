@@ -284,7 +284,9 @@
 .ticket-box-table table {
     margin-top: 20px;
 }
-
+.page-number{
+	width: 70%!important;
+}
 
 }
 @media only screen and (max-width: 576px){

@@ -1493,7 +1493,7 @@ hr {
 .page-number ul li{
   background-color: #eb315a;
   border-radius: 50%;
-  margin-right: auto;
+  margin-right: 6px;
   width: 50px;
   line-height: 50px;
   cursor: pointer;
